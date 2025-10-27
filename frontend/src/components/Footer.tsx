@@ -98,7 +98,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-bg-tertiary mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-text-tertiary text-sm">
-            © 2024 Teen Tiny. All rights reserved.
+            © Coming 2026 Teen Tiny. All rights reserved.
           </p>
           <p className="text-text-tertiary text-sm mt-2 md:mt-0">
             You must be 18+ to access this content
