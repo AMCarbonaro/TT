@@ -13,7 +13,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <img 
-              src="/logo.heic" 
+              src="/logo.png" 
               alt="Teen Tiny Logo" 
               className="h-8 w-8 object-contain"
             />
