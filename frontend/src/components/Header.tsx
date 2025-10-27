@@ -11,8 +11,15 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-text-primary">
-            Teen Tiny
+          <Link href="/" className="flex items-center space-x-3">
+            <img 
+              src="/logo.heic" 
+              alt="Teen Tiny Logo" 
+              className="h-8 w-8 object-contain"
+            />
+            <span className="text-2xl font-bold text-text-primary">
+              Teen Tiny
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
