@@ -81,6 +81,16 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/cookies" className="text-text-secondary hover:text-text-primary transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/accessibility" className="text-text-secondary hover:text-text-primary transition-colors">
+                  Accessibility
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
