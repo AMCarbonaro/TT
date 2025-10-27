@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  body {
+    @apply bg-bg-primary text-text-primary;
+  }
+  
+  * {
+    @apply border-bg-secondary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-accent-primary/90 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent-primary text-accent-primary px-6 py-3 rounded-lg font-medium hover:bg-accent-primary hover:text-white transition-colors duration-200;
+  }
+  
+  .btn-text {
+    @apply bg-transparent text-accent-primary px-4 py-2 rounded font-medium hover:underline transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-bg-tertiary rounded-xl p-6 border border-bg-secondary;
+  }
+  
+  .video-card {
+    @apply bg-bg-tertiary rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200 cursor-pointer;
+  }
+  
+  .collection-card {
+    @apply bg-bg-tertiary rounded-2xl p-6 hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer;
+  }
+  
+  .input-field {
+    @apply bg-bg-tertiary border border-bg-secondary rounded-lg px-4 py-3 text-text-primary placeholder-text-tertiary focus:border-accent-primary focus:outline-none focus:ring-2 focus:ring-accent-primary/20 transition-colors duration-200;
+  }
+  
+  .tab-active {
+    @apply border-b-2 border-accent-primary text-accent-primary;
+  }
+  
+  .tab-inactive {
+    @apply border-b-2 border-transparent text-text-secondary hover:text-text-primary hover:border-bg-secondary transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-primary to-accent-blue bg-clip-text text-transparent;
+  }
+  
+  .collection-gradient-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .collection-gradient-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .collection-gradient-3 {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  }
+  
+  .collection-gradient-4 {
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+  }
+  
+  .collection-gradient-5 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .collection-gradient-6 {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  }
+  
+  .collection-gradient-7 {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  }
+}
