@@ -1,46 +1,42 @@
 import Link from 'next/link';
+import { getVideoCountByCollection } from '@/lib/data';
 
 export default function CollectionsPage() {
   const collections = [
     {
-      slug: 'classic-elegance',
+      slug: 'step-brother-adin',
       name: 'Step Brother Adin',
       description: 'Forbidden family fantasies that push boundaries and explore taboo desires with intense passion.',
       gradient: 'collection-gradient-1',
       color: 'collection-1',
-      videoCount: 15,
     },
     {
-      slug: 'modern-passion',
+      slug: 'teen-blowjobs',
       name: 'Teen Blowjobs',
       description: 'Fresh faces and eager performances showcasing the art of oral pleasure with youthful enthusiasm.',
       gradient: 'collection-gradient-2',
       color: 'collection-2',
-      videoCount: 12,
     },
     {
-      slug: 'bold-adventures',
+      slug: 'adin-goes-to-japan',
       name: 'Adin Goes To Japan',
       description: 'Cultural exploration meets exotic encounters in the land of the rising sun with authentic experiences.',
       gradient: 'collection-gradient-3',
       color: 'collection-3',
-      videoCount: 18,
     },
     {
-      slug: 'fresh-encounters',
+      slug: 'tiny-ass-worship',
       name: 'Tiny Ass Worship',
       description: 'Devoted worship of petite perfection with intimate focus on every curve and detail.',
       gradient: 'collection-gradient-4',
       color: 'collection-4',
-      videoCount: 10,
     },
     {
-      slug: 'cool-confidence',
+      slug: 'lets-rape-him',
       name: 'Lets Rape Him',
       description: 'Intense domination scenarios with powerful performances that command attention and respect.',
       gradient: 'collection-gradient-5',
       color: 'collection-5',
-      videoCount: 14,
     },
     {
       slug: 'kawaii-kink',
@@ -48,7 +44,6 @@ export default function CollectionsPage() {
       description: 'Adorably naughty content blending cute aesthetics with kinky desires for the perfect contrast.',
       gradient: 'collection-gradient-6',
       color: 'collection-6',
-      videoCount: 20,
     },
   ];
 
@@ -72,7 +67,7 @@ export default function CollectionsPage() {
               <div className={`w-full h-48 ${collection.gradient} rounded-lg mb-4 flex items-center justify-center`}>
                 <div className="text-white text-center">
                   <div className="text-2xl font-bold mb-2">{collection.name}</div>
-                  <div className="text-sm opacity-90">{collection.videoCount} videos</div>
+                  <div className="text-sm opacity-90">{getVideoCountByCollection(collection.slug)} videos</div>
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-2">
