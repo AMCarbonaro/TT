@@ -79,11 +79,11 @@ const performers = [
     ],
   },
   {
-    slug: 'luna-midnight',
-    name: 'Luna Midnight',
+    slug: 'luna-moon',
+    name: 'Luna Moon',
     bio: 'Rising star known for her captivating performances and unique style. Luna brings fresh energy and creativity to every project.',
     profilePhotoUrl: 'https://via.placeholder.com/400x400/EC4899/FFFFFF?text=LM',
-    coverPhotoUrl: 'https://via.placeholder.com/1200x400/EC4899/FFFFFF?text=Luna+Midnight',
+    coverPhotoUrl: 'https://via.placeholder.com/1200x400/EC4899/FFFFFF?text=Luna+Moon',
     videoCount: 5,
     videos: [
       {
@@ -101,15 +101,15 @@ const performers = [
       { url: 'https://via.placeholder.com/400x300/EC4899/FFFFFF?text=Photo+2', alt: 'Behind the scenes' },
     ],
     socialMedia: [
-      { platform: 'onlyfans', handle: '@luna_midnight_official', url: 'https://onlyfans.com/luna_midnight_official' },
+      { platform: 'onlyfans', handle: '@luna_moon_official', url: 'https://onlyfans.com/luna_moon_official' },
     ],
   },
   {
-    slug: 'jordan-rivers',
-    name: 'Jordan Rivers',
-    bio: 'Versatile performer specializing in both solo and collaborative content. Jordan brings authenticity and passion to every performance.',
-    profilePhotoUrl: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=JR',
-    coverPhotoUrl: 'https://via.placeholder.com/1200x400/F59E0B/FFFFFF?text=Jordan+Rivers',
+    slug: 'drake-wild',
+    name: 'Drake Wild',
+    bio: 'Versatile performer specializing in both solo and collaborative content. Drake brings authenticity and passion to every performance.',
+    profilePhotoUrl: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=DW',
+    coverPhotoUrl: 'https://via.placeholder.com/1200x400/F59E0B/FFFFFF?text=Drake+Wild',
     videoCount: 7,
     videos: [
       {
@@ -126,15 +126,15 @@ const performers = [
       { url: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=Photo+1', alt: 'Professional headshot' },
     ],
     socialMedia: [
-      { platform: 'onlyfans', handle: '@jordan_rivers_official', url: 'https://onlyfans.com/jordan_rivers_official' },
+      { platform: 'onlyfans', handle: '@drake_wild_official', url: 'https://onlyfans.com/drake_wild_official' },
     ],
   },
   {
-    slug: 'sage-wilder',
-    name: 'Sage Wilder',
-    bio: 'Experienced performer with a focus on authentic and passionate performances. Sage brings depth and emotion to every project.',
-    profilePhotoUrl: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=SW',
-    coverPhotoUrl: 'https://via.placeholder.com/1200x400/F59E0B/FFFFFF?text=Sage+Wilder',
+    slug: 'sophia-star',
+    name: 'Sophia Star',
+    bio: 'Experienced performer with a focus on authentic and passionate performances. Sophia brings depth and emotion to every project.',
+    profilePhotoUrl: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=SS',
+    coverPhotoUrl: 'https://via.placeholder.com/1200x400/F59E0B/FFFFFF?text=Sophia+Star',
     videoCount: 9,
     videos: [
       {
@@ -151,7 +151,33 @@ const performers = [
       { url: 'https://via.placeholder.com/400x400/F59E0B/FFFFFF?text=Photo+1', alt: 'Professional headshot' },
     ],
     socialMedia: [
-      { platform: 'onlyfans', handle: '@sage_wilder_official', url: 'https://onlyfans.com/sage_wilder_official' },
+      { platform: 'onlyfans', handle: '@sophia_star_official', url: 'https://onlyfans.com/sophia_star_official' },
+    ],
+  },
+  {
+    slug: 'blake-thunder',
+    name: 'Blake Thunder',
+    bio: 'Dynamic performer known for intense performances and charismatic presence. Blake brings energy and passion to every project.',
+    profilePhotoUrl: 'https://via.placeholder.com/400x400/10B981/FFFFFF?text=BT',
+    coverPhotoUrl: 'https://via.placeholder.com/1200x400/10B981/FFFFFF?text=Blake+Thunder',
+    videoCount: 6,
+    videos: [
+      {
+        id: '7',
+        title: 'New Beginnings',
+        slug: 'new-beginnings',
+        thumbnailUrl: 'https://via.placeholder.com/640x360/10B981/FFFFFF?text=New+Beginnings',
+        duration: '28:00',
+        viewCount: 2100,
+        releaseDate: '2024-01-25',
+      },
+    ],
+    photos: [
+      { url: 'https://via.placeholder.com/400x400/10B981/FFFFFF?text=Photo+1', alt: 'Professional headshot' },
+      { url: 'https://via.placeholder.com/400x300/10B981/FFFFFF?text=Photo+2', alt: 'Behind the scenes' },
+    ],
+    socialMedia: [
+      { platform: 'onlyfans', handle: '@blake_thunder_official', url: 'https://onlyfans.com/blake_thunder_official' },
     ],
   },
 ];
