@@ -2,6 +2,17 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import PerformerTabs from '@/components/PerformerTabs';
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'alexandra-rose' },
+    { slug: 'marcus-stone' },
+    { slug: 'luna-moon' },
+    { slug: 'drake-wild' },
+    { slug: 'sophia-star' },
+    { slug: 'blake-thunder' },
+  ];
+}
+
 // Mock data for now - will be replaced with API calls
 const performers = [
   {

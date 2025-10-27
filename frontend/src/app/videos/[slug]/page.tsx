@@ -1,6 +1,21 @@
 import { notFound } from 'next/navigation';
 import VideoTabs from '@/components/VideoTabs';
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'elegant-evening' },
+    { slug: 'sophisticated-desires' },
+    { slug: 'refined-passion' },
+    { slug: 'modern-connection' },
+    { slug: 'digital-intimacy' },
+    { slug: 'bold-exploration' },
+    { slug: 'new-beginnings' },
+    { slug: 'confident-styling' },
+    { slug: 'kawaii-dreams' },
+    { slug: 'cute-kink' },
+  ];
+}
+
 // Mock data for now - will be replaced with API calls
 const videos = [
   {

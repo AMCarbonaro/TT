@@ -1,6 +1,17 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
+export async function generateStaticParams() {
+  return [
+    { slug: 'step-brother-adin' },
+    { slug: 'teen-blowjobs' },
+    { slug: 'adin-goes-to-japan' },
+    { slug: 'tiny-ass-worship' },
+    { slug: 'lets-rape-him' },
+    { slug: 'kawaii-kink' },
+  ];
+}
+
 // Mock data for now - will be replaced with API calls
 const collections = [
   {

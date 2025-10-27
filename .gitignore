@@ -105,3 +105,6 @@ docker-compose.override.yml
 tmp/
 temp/
 
+
+# Local Netlify folder
+.netlify
