@@ -32,7 +32,7 @@ model Collection {
 
   @@map("collections")
   @@index([slug])
-  @@index([isActive], where: { deletedAt: null })
+  @@index([isActive])
 }
 
 model Video {
@@ -84,12 +84,12 @@ model Video {
   featuredIn        Collection[] @relation("FeaturedVideo")
 
   @@map("videos")
-  @@index([collectionId], where: { deletedAt: null })
+  @@index([collectionId])
   @@index([slug])
-  @@index([isPublished, publishedAt], where: { deletedAt: null })
-  @@index([isFeatured], where: { isPublished: true, deletedAt: null })
-  @@index([releaseDate], where: { deletedAt: null })
-  @@index([viewCount], where: { deletedAt: null })
+  @@index([isPublished, publishedAt])
+  @@index([isFeatured])
+  @@index([releaseDate])
+  @@index([viewCount])
 }
 
 model Performer {
@@ -123,8 +123,8 @@ model Performer {
 
   @@map("performers")
   @@index([slug])
-  @@index([isActive], where: { deletedAt: null })
-  @@index([videoCount], where: { deletedAt: null })
+  @@index([isActive])
+  @@index([videoCount])
 }
 
 model VideoPerformer {
@@ -171,9 +171,9 @@ model Photo {
   performer         Performer? @relation(fields: [performerId], references: [id], onDelete: Cascade)
 
   @@map("photos")
-  @@index([videoId], where: { deletedAt: null })
-  @@index([performerId], where: { deletedAt: null })
-  @@index([photoType], where: { deletedAt: null })
+  @@index([videoId])
+  @@index([performerId])
+  @@index([photoType])
 }
 
 model User {
@@ -218,7 +218,7 @@ model User {
   @@map("users")
   @@index([email])
   @@index([username])
-  @@index([isActive], where: { deletedAt: null })
+  @@index([isActive])
 }
 
 model Subscription {
@@ -253,8 +253,8 @@ model Subscription {
 
   @@map("subscriptions")
   @@index([userId])
-  @@index([status], where: { status: "active" })
-  @@index([nextBillingAt], where: { status: "active" })
+  @@index([status])
+  @@index([nextBillingAt])
 }
 
 model SocialMediaLink {
