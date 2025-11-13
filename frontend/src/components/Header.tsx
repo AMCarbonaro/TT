@@ -30,6 +30,9 @@ export default function Header() {
             <Link href="/search" className="text-text-secondary hover:text-text-primary transition-colors">
               Search
             </Link>
+            <Link href="/fundraising" className="text-text-secondary hover:text-text-primary transition-colors">
+              Fundraising
+            </Link>
           </nav>
 
           {/* User Menu */}
@@ -74,6 +77,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Search
+              </Link>
+              <Link 
+                href="/fundraising" 
+                className="text-text-secondary hover:text-text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Fundraising
               </Link>
               <div className="pt-4 border-t border-bg-tertiary space-y-2">
                 <button className="btn-text w-full text-left">
